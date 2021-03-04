@@ -1,159 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+        integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Веб-Студия</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="/">
-                <img src="./img/logo.svg" alt="mitsubishi-nissan alliance logo" />
-                Test Page
-            </a>
-                    
-            <ul>
-                <li><a href="https://google.com" target="_blank" rel="noopener noreferrer nofollow">Google it!</a></li>
-                <li><a href="https://yahoo.com" target="_blank" rel="noopener noreferrer nofollow">Not sure, Yahoo it!</a></li>
-                <li><a href="https://duckduckgo.com/" target="_blank" rel="noopener noreferrer nofollow">Fuck No! I'm a DUCK</a></li>
+  <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a class="logo-link logo-dark link" lang="en" href="#">
+                    <span class="logo-accent">Web</span>Studio
+                </a>
+            
+                <ul class="nav-list">
+                    <li class="nav-item list">
+                        <a class="navigation-link link-active link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="nav-item list">
+                        <a class="navigation-link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-item list">
+                        <a class="navigation-link link" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact-list">
+                <li class="contact-item list">
+                    <a class="contact-link link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+                </li>
+                <li class="contact-item list">
+                    <a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
-                    
-            <ul>
-                <li><a href="">Log in</a></li>
-                <li><a href="">Register</a></li>
-            </ul>
-        </nav>
+        </div>
+
     </header>
     <main>
-            <!-- Hero -->
-            <section>
-                <h1>The most successful Alliance</h1>
-                <a href="">Join Today</a>
-            </section>
-            <!-- Advantages -->
-            <section>
-                <h2>Drive vehicles <br>you own way</h2>
-            
-                <ul>
-                    <li>
-                        <h3>Nissan</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, aliquid.</p>
-                        <a href="">Learn more</a>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">ЕФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                <button class="modal-btn" type="button">Заказать услугу</button>
+            </div>
+        </section>
+        <!-- Advantages -->
+        <section class="advantages section">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <div class="container">
+                <ul class="advantages-list">
+                    <li class="advantages-item list">
+                        <h3 class="advantages-item-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                        <p class="advantages-text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </p>
                     </li>
-                    <li>
-                        <h3>Renault</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, aliquid.</p>
-                        <a href="">Learn more</a>
+                    <li class="advantages-item list">
+                        <h3 class="advantages-item-title">ПУНКТУАЛЬНОСТЬ</h3>
+                        <p class="advantages-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        </p>
                     </li>
-                    <li>
-                        <h3>Toyota</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, aliquid.</p>
-                        <a href="">Learn more</a>
+                    <li class="advantages-item list">
+                        <h3 class="advantages-item-title">ПЛАНИРОВАНИЕ</h3>
+                        <p class="advantages-text">Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </p>
                     </li>
-                    <li>
-                        <h3>Mitsubishi</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, aliquid.</p>
-                        <a href="">Learn more</a>
-                    </li>
-                </ul>
-            </section>
-            <!-- Examples -->
-            <section>
-                <h2>Examples</h2>
-            
-                <ul>
-                    <li>
-                        <img src="./img/placeholder.png" alt="Nissan SUV on a snowy forest road" width="750" height="440" />
-                        <h3>Rumbling snowy forest</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolore!</p>
-                    </li>
-                    <li>
-                        <img src="./img/placeholder.png" alt="Toyota SUV climbing the muddy mountain" width="750" height="440" />
-                        <h3>Climbing mountains</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolore!</p>
+                    <li class="advantages-item list">
+                        <h3 class="advantages-item-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                        <p class="advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
-            </section>
-            <!-- Testimonials -->
-            <section>
-                <h2>You're in a good company</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta ullam alias eius voluptate provident.</p>
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src="./img/placeholder.png" alt="partner logo Nissan" width="200" />
-                        </a>
+            </div>  
+        </section>
+        <!-- Examples -->
+        <section class="examples section">
+            <div class="container">
+                <h2 class="examples-title">Чем мы занимаемся</h2>
+                <ul class="examples-list">
+                    <li class="examples-item list">
+                        <img src="./img/studio/box1.jpg" alt="Человек работает за Ipad на деревяном столе с безпроводной клавиатурой" width="370" height="294"></li>
+                    <li class="examples-item list">
+                        <img src="./img/studio/box2.jpg" alt="Девушка работает за ноутбуком со смартфоном в руках" width="370" height="294"></li>
+                    <li class="examples-item list">
+                        <img src="./img/studio/box3.jpg" alt="Девушка работает на планшете, на заднем фоне персональный компьютер" width="370" height="294"></li>
+            </ul>
+            </div>
+        </section>
+        <!-- Team -->
+        <section class="team section">
+            <div class="container">
+                <h2 class="team-title">Наша команда</h2>
+                <ul class="team-list">
+                    <li class="team-item list">
+                        <img class="team-item-img" src="./img/studio/teamcard1.jpg" alt="Продукт дизайнер" width="270">
+                        <div class="team-item-card">
+                            <h3 class="team-card-name">Игорь Демьяненко</h3>
+                            <p class="team-card-text">Product designer</p>
+                        </div> 
                     </li>
-                    <li>
-                        <a href="">
-                            <img src="./img/placeholder.png" alt="partner logo Renault" width="200" />
-                        </a>
+                    <li class="team-item list">
+                        <img class="team-item-img" src="./img/studio/teamcard2.jpg" alt="Frontend разработчик" width="270">
+                        <div class="team-item-card">
+                            <h3 class="team-card-name">Ольга Репина</h3>
+                            <p class="team-card-text">Frontend Developer</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="">
-                            <img src="./img/placeholder.png" alt="partner logo Toyota" width="200" />
-                        </a>
+                    <li class="team-item list">
+                        <img class="team-item-img" src="./img/studio/teamcard3.jpg" alt="Маркетинг специалист" width="270">
+                        <div class="team-item-card">
+                            <h3 class="team-card-name">Николай Тарасов</h3>
+                            <p class="team-card-text">Marketing</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="">
-                            <img src="./img/placeholder.png" alt="partner logo Mitsubishi" width="200" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./img/placeholder.png" alt="partner logo Skoda" width="200" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./img/placeholder.png" alt="partner logo Subaru" width="200" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./img/placeholder.png" alt="partner logo Samsung" width="200" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./img/placeholder.png" alt="partner logo Lincoln" width="200" />
-                        </a>
+                    <li class="team-item list">
+                        <img class="team-item-img" src="./img/studio/teamcard4.jpg" alt="Дизайнер пользовательского интерфейса" width="270">
+                        <div class="team-item-card">
+                            <h3 class="team-card-name">Михаил Ермаков</h3>
+                            <p class="team-card-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
-            </section>
+            </div>
+        </section>
     </main>
     <!-- Footer -->
-    <footer>
-        Some contacts will be there...
+    <footer class="studio-footer">
+        <div class="container">
+            <a class="logo-link-footer logo-light link" lang="en" href="#">
+                <span class="logo-accent">Web</span>Studio
+            </a>
+            
+            <address class="address">
+                <ul class="address-list">
+                    <li class="address-list-item list">
+                        <a class="address-link-maps link" href="https://goo.gl/maps/86rL7UWtYpAY7sxWA"
+                            target="_blank" rel="noopener noreferrer nofollow">г. Киев, пр-т. Леси Украинки, 26</a></li>
+                    <li class="address-list-item list">
+                        <a class="address-link link" href="mailto:info@devstudio.com"
+                            lang="en">info@devstudio.com</a></li>
+                    <li class="address-list-item list">
+                        <a class="address-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
-<hr>
-<h2>Welcome to this test Page</h2>
-<hr>
-
-<div class="btn-group">
-    <button type="button" class="btn btn-primary">Apple</button>
-    <button type="button" class="btn btn-primary">Samsung</button>
-    <button type="button" class="btn btn-primary">Sony</button>
-</div>
-
-<br>
-    <img src="./img/gtfo.jpg" alt="In case of fire" height="400">
-    <img src="img/laptop-computer-on-work-table.jpg" alt="The laptop on the working table" height="400">
-    <img src="https://pyxis.nymag.com/v1/imgs/4a3/836/7b7102bdb0b3b043dad7f54facfb37c685-lap-desk-lede.jpg"
-        alt="second laptop on a table" height="400">
-<p>
-    <!-- The link to make a call -->
-    <a href="tel:+380637235939">Click here to call me</a>
-</p>
-<p>
-    <!-- The link to write the e-mail -->
-    <a href="mailto:valero2313@gmail.com">Click here to Mail Me</a>
-</p>
-<p>
-    <!-- My Facebook link -->
-    <a href="https://www.facebook.com/leroviten" target="_blank" rel="noopener noreferrer nofollow">Click here to visit My Facebook Page</a>
-</p>
 </body>
 </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+        integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Портфолио</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="portfolio-header header">
+        <nav class="navigation">
+            <a class="logo-link logo-dark link" lang="en" href="./index.html">
+                <span class="logo-accent">Web</span>Studio
+            </a>
+    
+        <ul class="navigation-list">
+            <li class="navigation-item-studio list"><a class="navigation-link link" href="./index.html">Студия</a></li>
+            <li class="navigation-item-portfolio list"><a class="navigation-link link-active link"
+                        href="./portfolio.html">Портфолио</a></li>
+            <li class="navigation-item-contacts list"><a class="navigation-link link"
+                        href="./contacts.html">Контакты</a></li>
+        </ul>
+        </nav>
+        <ul class="contact-list">
+            <li class="contact-item list"><a class="contact-mail link" href="mailto:info@devstudio.com"
+                    lang="en">info@devstudio.com</a></li>
+            <li class="contact-item list"><a class="contact-phone link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+    
+    </header>
+    <main>
+        <!-- Hidden H1 Title -->
+        <h1 class="visually-hidden">Портфолио</h1>
+        <section class="portfolio-menu">
+        <!-- Hidden H2 Title -->
+        <h2 class="portfolio-title">Наши проекты</h2>
+            <!-- Buttons -->
+            <ul class="filter-button-list list">
+                <li class="filter-button list">
+                    <button class="filter-button btn-all" type="button">Все</button>
+                </li>
+                <li class="filter-button-list list">
+                    <button class="filter-button btn-web" type="button">Веб-сайты</button>
+                </li>
+                <li class="filter-button-list list">
+                    <button class="filter-button btn-apps" type="button">Приложения</button>
+                </li>
+                <li class="filter-button-list list">
+                    <button class="filter-button btn-design" type="button">Дизайн</button>
+                </li>
+                <li class="filter-button-list list">
+                    <button class="filter-button btn-marketing" type="button">Маркетинг</button>
+                </li>
+            </ul>
+            <!-- Portfolio Cards -->
+            <ul>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-techno" src="./img/portfolio/techno.jpg" alt="Ноутбук" width="370" height="294">
+                    <h3 class="portfolio-card-title techno-title">Технокряк</h3>
+                    <p class="portfolio-card-description techno-desc">Веб-сайт</p></a>
+                </li>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-poster" src="./img/portfolio/poster-new-orlean.jpg" alt="Баскетболисты с мячом" width="370" height="294">
+                    <h3 class="portfolio-card-title poster-title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                    <p class="portfolio-card-description poster-desc">Дизайн</p></a>
+                </li>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-seafood" src="./img/portfolio/seafood.jpg" alt="Логотип ресторана" width="370" height="294">
+                    <h3 class="portfolio-card-title seafood-title">Ресторан <span lang="en">Seafood</span></h3>
+                    <p class="portfolio-card-description seafood-desc">Приложение</p></a>
+                </li>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-prime" src="./img/portfolio/prime.jpg" alt="Накладные наушники" width="370" height="294">
+                    <h3 class="portfolio-card-title prime-title">Проект <span lang="en">Prime</span></h3>
+                    <p class="portfolio-card-description prime-desc">Маркетинг</p></a>
+                </li>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-boxes" src="./img/portfolio/boxes.jpg" alt="Две коробки" width="370" height="294">
+                    <h3 class="portfolio-card-title boxes-title">Проект <span lang="en">Boxes</span></h3>
+                    <p class="portfolio-card-description boxes-desc">Приложение</p></a>
+                </li>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-web" src="./img/portfolio/inspiration.jpg" alt="Настольный компьютер" width="370" height="294">
+                    <h3 class="portfolio-card-title web-title" lang="en">Inspiration has no Borders</h3>
+                    <p class="portfolio-card-description web-desc">Веб-сайт</p></a>
+                </li>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-design" src="./img/portfolio/limited-edition.jpg" alt="Раскрытый журнал" width="370" height="294">
+                    <h3 class="portfolio-card-title design-title">Издание <span lang="en">Limited Edition</span></h3>
+                    <p class="portfolio-card-description design-desc">Дизайн</p></a>
+                </li>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-lab" src="./img/portfolio/project-lab.jpg" alt="Эмблема" width="370" height="294">
+                    <h3 class="portfolio-card-title lab-title">Проект <span lang="en">LAB</span></h3>
+                    <p class="portfolio-card-description lab-desc">Маркетинг</p></a>
+                </li>
+                <li class="portfolio-card list">
+                    <a class="portfolio-card-link link" href="#">
+                    <img class="card-app" src="./img/portfolio/growing-bussiness.jpg" alt="Человек работает за ноутбуком" width="370" height="294">
+                    <h3 class="portfolio-card-title app-title" lang="en">Growing Business</h3>
+                    <p class="portfolio-card-description app-desc">Приложение</p></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+                <a class="logo-link-footer logo-light link" lang="en" href="#">
+                    <span class="logo-accent">Web</span>Studio
+                </a>
+                
+                <address class="address">
+                    <ul>
+                        <li class="address-map-item list"><a class="address-link link" href="https://goo.gl/maps/86rL7UWtYpAY7sxWA"
+                                target="_blank" rel="noopener noreferrer nofollow">г. Киев, пр-т. Леси Украинки, 26</a>
+                        </li>
+                        <li class="address-mail-item list"><a class="address-mail link" href="mailto:info@devstudio.com"
+                                lang="en">info@devstudio.com</a>
+                        </li>
+                        <li class="address-phone-item list"><a class="address-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+    </footer>
+</body>
+</html>
