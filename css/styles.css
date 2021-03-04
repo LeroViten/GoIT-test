@@ -366,15 +366,6 @@ body {
   color: var(--white-color);
 }
 
-.logo-link-footer {
-  /* margin-top: 20px; */
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
 .address-list {
   margin-top: 20px;
 }
@@ -417,6 +408,11 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.portfolio-menu .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* =======================FILTER BUTTONS============================= */
 .filter-button:hover,
 .filter-button:focus,
@@ -428,359 +424,76 @@ body {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filter-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
   background-color: var(--portfolio-btn-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
-.btn-all {
-  position: absolute;
-  width: 73px;
-  height: 38px;
-  left: 495px;
-  top: 174px;
-}
-
-.btn-web {
-  position: absolute;
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
-}
-
-.btn-apps {
-  position: absolute;
-  width: 145px;
-  height: 38px;
-  left: 712px;
-  top: 174px;
-}
-
-.btn-design {
-  position: absolute;
-  width: 103px;
-  height: 38px;
-  left: 865px;
-  top: 174px;
-}
-
-.btn-marketing {
-  position: absolute;
-  width: 130px;
-  height: 38px;
-  left: 976px;
-  top: 174px;
-}
 /* ==============================END FILTER BUTTONS========================= */
 
 /* =============================CARD LIST================================= */
 
-.card-techno {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 262px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-.techno-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 239px;
-  top: 576px;
+
+.portfolio-card-list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-card-title {
   font-family: var(--main-font);
   color: var(--main-font-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
-.techno-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 239px;
-  top: 616px;
+
+.portfolio-card-description {
   font-family: var(--main-font);
-  color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
-.card-poster {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 262px;
-}
-.poster-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 639px;
-  top: 576px;
-  font-family: var(--main-font);
-  color: var(--main-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.poster-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 639px;
-  top: 616px;
-  font-family: var(--main-font);
   color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
 }
-.card-seafood {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 1015px;
-  top: 262px;
+
+.portfolio-card-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
-.seafood-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 1039px;
-  top: 576px;
-  font-family: var(--main-font);
-  color: var(--main-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.seafood-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 1039px;
-  top: 616px;
-  font-family: var(--main-font);
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-.card-prime {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 696px;
-}
-.prime-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 239px;
-  top: 1010px;
-  font-family: var(--main-font);
-  color: var(--main-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.prime-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 239px;
-  top: 1050px;
-  font-family: var(--main-font);
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-.card-boxes {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 696px;
-}
-.boxes-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 639px;
-  top: 1010px;
-  font-family: var(--main-font);
-  color: var(--main-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.boxes-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 639px;
-  top: 1050px;
-  font-family: var(--main-font);
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-.card-web {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 1015px;
-  top: 696px;
-}
-.web-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 1039px;
-  top: 1010px;
-  font-family: var(--main-font);
-  color: var(--main-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.web-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 1039px;
-  top: 1050px;
-  font-family: var(--main-font);
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-.card-design {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1130px;
-}
-.design-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 239px;
-  top: 1444px;
-  font-family: var(--main-font);
-  color: var(--main-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.design-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 239px;
-  top: 1484px;
-  font-family: var(--main-font);
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-.card-lab {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 1130px;
-}
-.lab-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 639px;
-  top: 1444px;
-  font-family: var(--main-font);
-  color: var(--main-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.lab-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 639px;
-  top: 1484px;
-  font-family: var(--main-font);
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-.card-app {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 1015px;
-  top: 1130px;
-}
-.app-title {
-  position: absolute;
-  width: 322px;
-  height: 36px;
-  left: 1039px;
-  top: 1444px;
-  font-family: var(--main-font);
-  color: var(--main-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.app-desc {
-  position: absolute;
-  width: 322px;
-  height: 30px;
-  left: 1039px;
-  top: 1484px;
-  font-family: var(--main-font);
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
+
 /* =========================END CARD LIST=============================== */
 
 /* =======================PORTFOLIO FOOTER=============================== */
+
 .portfolio-footer {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-color);
 }
