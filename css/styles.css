@@ -145,6 +145,23 @@ body {
   margin-right: 50px;
 }
 
+/* .contact-item::before {
+  display: block;
+  content: "";
+  height: 16px;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.envelope-icon::before {
+  background-image: url(../img/portfolio/icons/envelope.svg);
+}
+
+.phone-icon::before {
+  background-image: url(../img/portfolio/icons/phone.svg);
+} */
+
 /* .contact-list .contact-item + .contact-item {
   margin-left: 50px;
 } */
@@ -175,7 +192,15 @@ body {
 
 .hero {
   background-color: var(--background-color);
-  color: var(--white-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/portfolio/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -184,6 +209,7 @@ body {
   max-width: 696px;
   margin: 0 auto 30px;
   font-family: var(--main-font);
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -235,6 +261,33 @@ body {
   margin-top: -30px;
 }
 
+.advantages-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  background-color: var(--portfolio-btn-color);
+}
+
+.antenna-icon::before {
+  background-image: url(../img/portfolio/icons/antenna.svg);
+}
+
+.clock-icon::before {
+  background-image: url(../img/portfolio/icons/clock.svg);
+}
+
+.diagram-icon::before {
+  background-image: url(../img/portfolio/icons/diagram.svg);
+}
+
+.astronaut-icon::before {
+  background-image: url(../img/portfolio/icons/astronaut.svg);
+}
+
 .advantages-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
@@ -243,6 +296,7 @@ body {
 
 .advantages-item-title {
   margin-bottom: 10px;
+  margin-top: 30px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
