@@ -451,12 +451,14 @@ body {
 }
 
 .customers-link:hover,
-.customers-link:focus {
+.customers-link:focus,
+.customer-icon:hover,
+.customer-icon:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
-.customers-icon {
+.customer-icon {
   fill: currentColor;
 }
 
