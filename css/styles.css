@@ -412,10 +412,38 @@ body {
   color: var(--secondary-text-color);
 }
 
+.social-hub {
+  display: flex;
+}
+
+.social-hub-thumb:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-hub-link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--customers-icon-color);
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.social-hub-link:hover,
+.social-hub-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.social-hub-thumb .social-hub-link {
+  fill: currentColor;
+}
+
 /* ============================END TEAM============================== */
 
 /* ===========================CUSTOMERS================================ */
-
 .customers-title {
   margin-bottom: 50px;
   font-family: var(--main-font);
