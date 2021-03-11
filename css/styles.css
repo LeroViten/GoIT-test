@@ -501,6 +501,11 @@ body {
   background-color: var(--background-color);
 }
 
+.studio-footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
 .logo-light {
   color: var(--white-color);
 }
@@ -536,6 +541,52 @@ body {
 .address-link-maps:hover,
 .address-link-maps:focus {
   color: var(--accent-color);
+}
+
+/* =========================SUBSCRIPTION============================ */
+
+.subscription {
+  margin-left: 70px;
+}
+
+.subscription-title {
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.subscription-list {
+  display: flex;
+}
+
+.subscription-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.subscription-item {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--customers-icon-color);
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.subscription-item:hover,
+.subscription-item:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.item-icon {
+  fill: currentColor;
 }
 /* ========================END STUDIO FOOTER========================== */
 
@@ -635,4 +686,9 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
+}
+
+.portfolio-footer .container {
+  display: flex;
+  align-items: baseline;
 }
