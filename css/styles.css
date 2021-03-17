@@ -169,7 +169,7 @@ body {
   opacity: 0;
   transform: scaleX(0);
   transition: transform var(--transition-duration) var(--transition-function),
-  opacity var(--transition-duration) var(--transition-function);
+    opacity var(--transition-duration) var(--transition-function);
 }
 
 .navigation-link:hover::before {
@@ -294,7 +294,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  transition: background-color var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-function);
 }
 
 .modal-btn:hover,
@@ -337,7 +338,8 @@ body {
   height: 581px;
   background-color: var(--white-color);
   border: 1px solid var(--black-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -558,7 +560,9 @@ body {
   justify-content: center;
   align-items: center;
 
-  transition: background-color var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration)
+      var(--transition-function),
+    color var(--transition-duration) var(--transition-function);
 }
 
 .social-hub-link:hover,
@@ -606,7 +610,8 @@ body {
   color: var(--customers-icon-color);
   border: 1px solid var(--customers-icon-color);
 
-  transition: color var(--transition-duration) var(--transition-function);
+  transition: color var(--transition-duration) var(--transition-function),
+    border-color var(--transition-duration) var(--transition-function);
 }
 
 .customers-link:hover,
@@ -712,7 +717,8 @@ body {
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
 
-  transition: color var(--transition-duration) var(--transition-function), background-color var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-function);
 }
 
 .subscription-item:hover,
@@ -753,7 +759,9 @@ body {
   padding: 6px 22px;
   border-style: none;
 
-  transition: color var(--transition-duration) var(--transition-function), background-color var(--transition-duration) var(--transition-function);
+  transition: color var(--transition-duration) var(--transition-function),
+    background-color var(--transition-duration) var(--transition-function),
+    box-shadow var(--transition-duration) var(--transition-function);
 }
 
 .filter-button:hover,
@@ -821,7 +829,7 @@ body {
   opacity: 0;
 
   transition: opacity var(--transition-duration) var(--transition-function),
-  transform var(--transition-duration) var(--transition-function);
+    transform var(--transition-duration) var(--transition-function);
 }
 
 .portfolio-card-list:hover .overlay-text,
