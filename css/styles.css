@@ -91,7 +91,15 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  animation-duration: 1000ms;
 }
+
+/* .logo-link:hover,
+.logo-link:focus {
+  animation-name: pulse;
+  animation-duration: 1000ms;
+} */
 
 .logo-dark {
   color: var(--black-color);
@@ -147,6 +155,7 @@ body {
   letter-spacing: 0.02em;
 
   transition: color var(--transition-duration) var(--transition-function);
+  animation-duration: 1000ms;
 }
 
 .navigation-link:hover,
@@ -228,6 +237,7 @@ body {
   color: var(--secondary-text-color);
 
   transition: color var(--transition-duration) var(--transition-function);
+  animation-duration: 1000ms;
 }
 
 .contact-link:hover,
@@ -320,6 +330,7 @@ body {
 
 .backdrop.is-hidden {
   opacity: 0;
+  /* visibility: hidden; */
   pointer-events: none;
 }
 
