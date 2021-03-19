@@ -420,6 +420,31 @@
                     <use href="./img/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+                <div class="modal-content">
+                    <label for="name" class="modal-form-label">Имя</label>
+                    <input type="text" class="modal-form-input" name="name" id="name" placeholder=" " />
+                </div>
+                <div class="modal-content">
+                    <label for="tel" class="modal-form-label">Телефон</label>
+                    <input type="text" class="modal-form-input" name="tel" id="tel" placeholder=" " />
+                </div>
+                <div class="modal-content">
+                    <label for="email" class="modal-form-label">Почта</label>
+                    <input type="text" class="modal-form-input" name="email" id="email" placeholder=" " />
+                </div>
+                <div class="modal-content">
+                    <label for="comment" class="modal-form-label">Комментарий</label>
+                    <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-comment"></textarea>
+                </div>
+                <label class="modal-form-checkbox">
+                    <input type="checkbox" name="agreement" value="agree" />
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="agreement-link" href="#">Условия договора</a>
+                </label>
+            </form>
+            <button type="submit" class="agr-btn">Отправить</button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
