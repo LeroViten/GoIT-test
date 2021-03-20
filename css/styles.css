@@ -360,6 +360,7 @@ textarea {
 
 .modal-title {
   margin-top: 40px;
+  margin-bottom: 12px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 20px;
@@ -370,7 +371,8 @@ textarea {
 }
 
 .modal-form {
-  padding: 12px 40px 20px 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -388,8 +390,29 @@ textarea {
 .modal-form-input {
   width: 448px;
   height: 40px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  box-sizing: border-box;
+
+  transition: border-color var(--transition-duration) var(--transition-function);
+}
+
+.modal-form-input:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transition: fill var(--transition-duration) var(--transition-function);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
 }
 
 .modal-comment {
@@ -404,15 +427,26 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: rgba(117, 117, 117, 0.7);
+
+  transition: border-color var(--transition-duration) var(--transition-function);
+}
+
+.modal-comment:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .modal-content {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
 .modal-form-checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 13px;
   margin-bottom: 30px;
   font-family: var(--main-font);
   color: var(--secondary-text-color);
@@ -422,8 +456,34 @@ textarea {
   letter-spacing: 0.03em;
 }
 
+.modal-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  border: 2px solid var(--main-font-color);
+  border-radius: 2px;
+  margin-right: 8px;
+
+  transition: background-color var(--transition-duration)
+      var(--transition-function),
+    border-color var(--transition-duration) var(--transition-function);
+}
+
+.modal-checkbox:checked + .checkbox-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .agreement-link {
   color: var(--accent-color);
+  margin-left: 2px;
 }
 
 .agr-btn {
@@ -881,6 +941,13 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: var(--background-color);
   padding-left: 16px;
+
+  transition: border-color var(--transition-duration) var(--transition-function);
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .subs-btn {
