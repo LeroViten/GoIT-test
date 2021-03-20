@@ -479,10 +479,11 @@ textarea {
 
   transition: background-color var(--transition-duration)
       var(--transition-function),
-    border-color var(--transition-duration) var(--transition-function);
+    border-color var(--transition-duration) var(--transition-function), transform var(--transition-duration) var(--transition-function);0
 }
 
 .modal-checkbox:checked + .checkbox-icon {
+  transform: scale(1.2);
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-size: contain;
