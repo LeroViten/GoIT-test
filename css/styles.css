@@ -400,7 +400,7 @@ textarea {
 
 .modal-form-input:focus {
   border: 1px solid var(--accent-color);
-  outline: none;
+  outline: 0;
 }
 
 .modal-form-icon {
@@ -434,7 +434,8 @@ textarea {
 
 .modal-comment:focus {
   border: 1px solid var(--accent-color);
-  outline: none;
+  outline: 0;
+  /* outline-color: var(--accent-color); */
 }
 
 .modal-content {
@@ -956,7 +957,7 @@ textarea {
 
 .form-input:focus {
   border-color: var(--accent-color);
-  outline: none;
+  outline: 0;
 }
 
 .subs-btn {
