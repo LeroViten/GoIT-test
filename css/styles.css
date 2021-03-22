@@ -118,7 +118,6 @@ body {
   width: 100%;
   height: 4px;
   bottom: 0;
-  left: 0;
   border-radius: 2px;
   background: var(--accent-color);
 }
@@ -348,7 +347,6 @@ body {
   width: 528px;
   height: 581px;
   background-color: var(--white-color);
-  border: 1px solid var(--black-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -400,14 +398,14 @@ textarea {
 
 .modal-form-input:focus {
   border: 1px solid var(--accent-color);
-  outline: 0;
+  outline: none;
 }
 
 .modal-form-icon {
   position: absolute;
   top: 50%;
   left: 12px;
-  fill: var(--main-font-color);
+  fill: currentColor;
 
   transition: fill var(--transition-duration) var(--transition-function);
 }
@@ -417,25 +415,28 @@ textarea {
 }
 
 .modal-comment {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
   padding: 12px 16px;
   width: 448px;
   height: 120px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  color: rgba(117, 117, 117, 0.7);
 
   transition: border-color var(--transition-duration) var(--transition-function);
 }
 
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .modal-comment:focus {
   border: 1px solid var(--accent-color);
-  outline: 0;
-  /* outline-color: var(--accent-color); */
+  outline: none;
 }
 
 .modal-content {
@@ -446,9 +447,10 @@ textarea {
 }
 
 .modal-form-checkbox {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: 13px;
+  /* margin-left: 13px; */
   margin-bottom: 30px;
   font-family: var(--main-font);
   color: var(--secondary-text-color);
@@ -456,6 +458,7 @@ textarea {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  /* cursor: pointer; */
 }
 
 .modal-checkbox {
@@ -480,7 +483,8 @@ textarea {
 
   transition: background-color var(--transition-duration)
       var(--transition-function),
-    border-color var(--transition-duration) var(--transition-function), transform var(--transition-duration) var(--transition-function);0
+    border-color var(--transition-duration) var(--transition-function),
+    transform var(--transition-duration) var(--transition-function);
 }
 
 .modal-checkbox:checked + .checkbox-icon {
@@ -493,7 +497,7 @@ textarea {
 
 .agreement-link {
   color: var(--accent-color);
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 .agr-btn {
@@ -957,7 +961,7 @@ textarea {
 
 .form-input:focus {
   border-color: var(--accent-color);
-  outline: 0;
+  outline: none;
 }
 
 .subs-btn {
