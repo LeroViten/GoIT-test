@@ -825,11 +825,11 @@ textarea {
   margin-top: 20px;
 }
 
-.address-list-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-link-maps {
+.address__link--mapped {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -840,7 +840,7 @@ textarea {
   transition: color var(--transition-duration) var(--transition-function);
 }
 
-.address-link {
+.address__link {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -851,10 +851,10 @@ textarea {
   transition: color var(--transition-duration) var(--transition-function);
 }
 
-.address-link:hover,
-.address-link:focus,
-.address-link-maps:hover,
-.address-link-maps:focus {
+.address__link:hover,
+.address__link:focus,
+.address__link--mapped:hover,
+.address__link--mapped:focus {
   color: var(--accent-color);
 }
 
@@ -864,7 +864,7 @@ textarea {
   margin-left: 70px;
 }
 
-.subscription-text {
+.subscription__text {
   margin-bottom: 20px;
   font-family: var(--main-font);
   font-weight: 700;
@@ -875,15 +875,15 @@ textarea {
   color: var(--white-color);
 }
 
-.subscription-list {
+.subscription__list {
   display: flex;
 }
 
-.subscription-list-item:not(:last-child) {
+.subscription__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.subscription-item {
+.subscription__link {
   display: inline-flex;
   width: 44px;
   height: 44px;
@@ -897,13 +897,13 @@ textarea {
     var(--transition-function);
 }
 
-.subscription-item:hover,
-.subscription-item:focus {
+.subscription__link:hover,
+.subscription__link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
 
-.item-icon {
+.subscription__icon {
   fill: var(--white-color);
 }
 
