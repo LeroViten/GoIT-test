@@ -725,7 +725,7 @@ textarea {
 /* ============================END TEAM============================== */
 
 /* ===========================CUSTOMERS================================ */
-.customers-title {
+.customers__title {
   margin-bottom: 50px;
   font-family: var(--main-font);
   font-weight: 700;
@@ -736,18 +736,18 @@ textarea {
   color: var(--main-font-color);
 }
 
-.customers-list {
+.customers__list {
   display: flex;
   align-items: center;
   margin-left: -30px;
 }
 
-.customers-list-item {
+.customers__item {
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
 }
 
-.customers-link {
+.customers__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -761,15 +761,15 @@ textarea {
     border-color var(--transition-duration) var(--transition-function);
 }
 
-.customers-link:hover,
-.customers-link:focus,
-.customer-icon:hover,
-.customer-icon:focus {
+.customers__link:hover,
+.customers__link:focus,
+.customers__icon:hover,
+.customers__icon:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
-.customer-icon {
+.customers__icon {
   fill: currentColor;
 }
 
