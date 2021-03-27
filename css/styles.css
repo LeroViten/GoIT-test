@@ -773,17 +773,17 @@ textarea {
   fill: currentColor;
 }
 
-/* ========================END CUSTOMERS================================ */
+/* ===========================END CUSTOMERS============================ */
 
-/* ==========================STUDIO FOOTER=========================== */
+/* ============================PAGE FOOTER============================= */
 
-.studio-footer {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
 }
 
-.studio-footer .container {
+.page-footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -949,18 +949,16 @@ textarea {
   margin-left: 10px;
 }
 
-/* ========================END STUDIO FOOTER========================== */
+/* ===========================END PAGE FOOTER============================= */
 
-/* +++++++++++++++++++++++++++PORTFOLIO++++++++++++++++++++++++++++++ */
-
-/* =============================PORTFOLIO-HEADER===================== */
+/* +++++++++++++++++++++++++++PORTFOLIO PAGE++++++++++++++++++++++++++++++ */
 
 .portfolio-menu .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* =======================FILTER BUTTONS============================= */
+/* ============================FILTER BUTTONS============================== */
 
 .filter-button {
   background-color: var(--portfolio-btn-color);
@@ -1079,35 +1077,3 @@ textarea {
 }
 
 /* =========================END CARD LIST=============================== */
-
-/* =======================PORTFOLIO FOOTER=============================== */
-
-.portfolio-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--background-color);
-}
-
-.portfolio-footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
-/* ====================================CONTACTS============================ */
-
-.contacts-hero {
-  max-width: 1600px;
-  background-color: var(--background-color);
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/neon.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
-}
