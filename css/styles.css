@@ -976,13 +976,13 @@ textarea {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-button-list {
+.filter-button__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-button-item:not(:last-child) {
+.filter-button__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -990,14 +990,14 @@ textarea {
 
 /* =============================CARD LIST================================= */
 
-.cards {
+.portfolio-cards {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.portfolio-card-list {
+.portfolio-cards__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -1005,8 +1005,8 @@ textarea {
   transition: box-shadow var(--transition-duration) var(--transition-function);
 }
 
-.portfolio-card-list:hover,
-.portfolio-card-list:focus {
+.portfolio-cards__item:hover,
+.portfolio-cards__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1016,7 +1016,7 @@ textarea {
   overflow: hidden;
 }
 
-.overlay-text {
+.card-overlay__text {
   position: absolute;
   top: 100%;
   left: 0;
@@ -1036,13 +1036,13 @@ textarea {
     transform var(--transition-duration) var(--transition-function);
 }
 
-.portfolio-card-list:hover .overlay-text,
-.portfolio-card-list:focus .overlay-text {
+.portfolio-cards__item:hover .card-overlay__text,
+.portfolio-cards__item:focus .card-overlay__text {
   transform: translateY(-100%);
   opacity: 1;
 }
 
-.portfolio-card-title {
+.portfolio-cards__title {
   font-family: var(--main-font);
   color: var(--main-font-color);
   font-weight: 700;
@@ -1052,7 +1052,7 @@ textarea {
   margin-bottom: 4px;
 }
 
-.portfolio-card-description {
+.portfolio-cards__description {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
@@ -1061,7 +1061,7 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-.portfolio-card-content {
+.portfolio-cards__content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
