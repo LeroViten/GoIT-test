@@ -129,12 +129,6 @@ body {
   margin-right: 50px;
 }
 
-/* Repeta old-school style */
-
-/* .navigation__list .navigation__item + .navigation__item {
-  margin-left: 50px;
-} */
-
 .navigation {
   display: flex;
   align-items: center;
@@ -432,9 +426,6 @@ textarea {
 }
 
 .modal-form__checkbox-input {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -584,7 +575,7 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-/* ===============END ADVANTAGES=================== */
+/* =================END ADVANTAGES===================== */
 
 /* ===================EXAMPLES========================= */
 
@@ -630,9 +621,9 @@ textarea {
   text-transform: uppercase;
 }
 
-/* ================END EXAMPLES========================= */
+/* =================END EXAMPLES======================= */
 
-/* =================TEAM============================= */
+/* =====================TEAM=========================== */
 
 .team {
   background-color: var(--portfolio-btn-color);
