@@ -78,6 +78,14 @@ body {
   color: var(--accent-color);
 }
 
+.logo__light {
+  color: var(--white-color);
+}
+
+.logo__dark {
+  color: var(--black-color);
+}
+
 /* =====================HEADER================= */
 
 .page-header {
@@ -99,11 +107,12 @@ body {
   animation-duration: 1000ms;
 }
 
-.logo--dark {
-  color: var(--black-color);
-}
-
 /* NAVIGATION BLOCK */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
 
 .navigation__item {
   position: relative;
@@ -125,13 +134,8 @@ body {
   margin-left: 93px;
 }
 
-.navigation__list .navigation__item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
 }
 
 .navigation__link {
@@ -779,10 +783,6 @@ textarea {
   align-items: baseline;
 }
 
-.logo--light {
-  color: var(--white-color);
-}
-
 .address {
   margin-top: 20px;
 }
@@ -943,11 +943,6 @@ textarea {
 /* ===========================END PAGE FOOTER============================= */
 
 /* +++++++++++++++++++++++++++PORTFOLIO PAGE++++++++++++++++++++++++++++++ */
-
-.portfolio-menu .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 /* ============================FILTER BUTTONS============================== */
 
