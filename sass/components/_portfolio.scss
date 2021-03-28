@@ -1,0 +1,115 @@
+// FILTER BUTTONS
+
+.filter-button {
+  background-color: var(--portfolio-btn-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-style: none;
+
+  transition: color var(--transition-duration) var(--transition-function),
+    background-color var(--transition-duration) var(--transition-function),
+    box-shadow var(--transition-duration) var(--transition-function);
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-button__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-button__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+// CARD LIST
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-cards__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  transition: box-shadow var(--transition-duration) var(--transition-function);
+}
+
+.portfolio-cards__item:hover,
+.portfolio-cards__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay__text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+
+  transition: opacity var(--transition-duration) var(--transition-function),
+    transform var(--transition-duration) var(--transition-function);
+}
+
+.portfolio-cards__item:hover .card-overlay__text,
+.portfolio-cards__item:focus .card-overlay__text {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.portfolio-cards__title {
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.portfolio-cards__description {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.portfolio-cards__content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}

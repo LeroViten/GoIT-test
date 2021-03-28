@@ -1,0 +1,29 @@
+%button {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  min-width: 200px;
+  background-color: $accent-color;
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-family: $main-font;
+  color: $white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  transition: background-color $transition-duration $transition-function;
+}
+
+%social-hub {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $customers-icon-color;
+  justify-content: center;
+  align-items: center;
+}
