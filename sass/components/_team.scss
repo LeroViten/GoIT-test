@@ -1,87 +1,76 @@
 .team {
-  background-color: var(--portfolio-btn-color);
+  background-color: $portfolio-btn-color;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  &__card {
+    padding: 30px;
+  }
+
+  &__card-name {
+    margin-bottom: 10px;
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-font-color;
+  }
+  &__card-text {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
 }
 
 .team__title {
   margin-bottom: 50px;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-font-color);
-}
-
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
+  color: $main-font-color;
 }
 
 .team__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  background-color: var(--white-color);
+  background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__card {
-  padding: 30px;
-}
-
-.team__card-name {
-  margin-bottom: 10px;
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-font-color);
-}
-
-.team__card-text {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-
 .social-hub {
   display: flex;
   margin-top: 16px;
-}
 
-.social-hub__thumb:not(:last-child) {
-  margin-right: 10px;
+  &__thumb:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-hub__link {
-  display: inline-flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--customers-icon-color);
-  justify-content: center;
-  align-items: center;
-
-  transition: background-color var(--transition-duration)
-      var(--transition-function),
-    color var(--transition-duration) var(--transition-function);
-}
-
-.social-hub__link:hover,
-.social-hub__link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-}
-
-.social-hub__thumb .social-hub__link {
+  @extend %social-hub;
   fill: currentColor;
+
+  transition: background-color $transition-duration $transition-function,
+    color $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
 }

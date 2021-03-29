@@ -1,5 +1,5 @@
 .logo {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -8,12 +8,12 @@
   animation-duration: 1000ms;
 
   &__accent {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   &__light {
-    color: var(--white-color);
+    color: $white-color;
   }
   &__dark {
-    color: var(--black-color);
+    color: $black-color;
   }
 }

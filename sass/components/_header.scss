@@ -65,11 +65,11 @@
   transform: scaleX(0);
   transition: transform $transition-duration $transition-function,
     opacity $transition-duration $transition-function;
+}
 
-  &:hover::before {
-    opacity: 1;
-    transform: scaleX(1);
-  }
+.navigation__link:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 //  NAVIGATION LINK :AFTER
