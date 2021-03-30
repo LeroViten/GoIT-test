@@ -4,9 +4,9 @@
     "sources": [
         "../sass/portfolio.scss",
         "../sass/utils/_variables.scss",
-        "../sass/utils/_reset.scss",
-        "../sass/utils/_visually-hidden.scss",
-        "../sass/utils/_container.scss",
+        "../sass/base/_reset.scss",
+        "../sass/base/_visually-hidden.scss",
+        "../sass/base/_container.scss",
         "../sass/utils/_placeholders.scss",
         "../sass/components/_logo.scss",
         "../sass/components/_header.scss",

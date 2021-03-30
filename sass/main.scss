@@ -1,7 +1,7 @@
 @import "./utils/variables";
-@import "./utils/reset";
-@import "./utils/visually-hidden";
-@import "./utils/container";
+@import "./base/reset";
+@import "./base/visually-hidden";
+@import "./base/container";
 @import "./utils/placeholders";
 
 @import "./components/logo";
