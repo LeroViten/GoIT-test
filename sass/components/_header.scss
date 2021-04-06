@@ -1,18 +1,23 @@
 // HEADER
 
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   &__container {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
 // NAVIGATION BLOCK
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
   &__item {
     position: relative;
   }
@@ -88,11 +93,16 @@
 // CONTACT BLOCK
 
 .contact {
-  display: flex;
-  align-items: center;
   margin-left: auto;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 50px;
+    }
   }
 }
 

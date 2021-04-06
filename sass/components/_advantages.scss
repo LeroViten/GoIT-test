@@ -2,15 +2,22 @@
   padding-bottom: 0px;
 
   &__list {
-    display: flex;
-    margin-left: -30px;
-    margin-top: -30px;
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
   }
 
   &__item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
   }
 
   &__pic-container {
@@ -33,6 +40,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $main-font-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__text {
