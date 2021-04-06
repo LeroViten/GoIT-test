@@ -24,6 +24,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
