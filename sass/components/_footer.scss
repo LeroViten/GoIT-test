@@ -2,15 +2,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $background-color;
-  @media screen and (max-width: 1199px) {
-    text-align: center;
+  // @media screen and (max-width: 1199px) {
+  //   text-align: center;
+  // }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
   }
 
   .container {
-    display: block;
-    @media screen and (min-width: $tablet) {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
       display: flex;
       align-items: baseline;
+      justify-content: space-evenly;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
     }
   }
 }
@@ -28,6 +38,9 @@
       margin-bottom: 9px;
     }
   }
+}
+
+.address-wrapper {
 }
 
 .address__link--mapped {

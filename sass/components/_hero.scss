@@ -44,7 +44,7 @@
   }
 
   &__title {
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto 30px;
     font-family: $main-font;
     color: $white-color;
@@ -56,6 +56,7 @@
     text-transform: uppercase;
 
     @media screen and (min-width: $desktop) {
+      max-width: 696px;
       font-size: 44px;
       line-height: 1.36;
     }

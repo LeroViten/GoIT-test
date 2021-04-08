@@ -293,6 +293,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact__item:not(:last-child) {
     margin-right: 50px;
@@ -315,8 +321,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -330,6 +334,13 @@ textarea {
 
 .contact__link:hover, .contact__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .filter-button {
@@ -460,14 +471,19 @@ textarea {
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .page-footer {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
 .page-footer .container {
-  display: block;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -478,6 +494,15 @@ textarea {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer .container {
+    text-align: left;
   }
 }
 
