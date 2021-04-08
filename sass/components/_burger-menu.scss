@@ -28,6 +28,10 @@
   background-color: $white-color;
   transform: translateY(-100%) translateX(-50%);
   transition: transform $transition-duration $transition-function;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .is-open {
