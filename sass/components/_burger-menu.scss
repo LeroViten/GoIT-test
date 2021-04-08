@@ -11,6 +11,17 @@
   }
 }
 
+.menu-button__icon--close,
+.menu-button__icon--open {
+  fill: currentColor;
+  transition: fill $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
 .menu-button__close {
   position: absolute;
   top: 10px;

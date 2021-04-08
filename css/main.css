@@ -177,6 +177,19 @@ textarea {
   }
 }
 
+.menu-button__icon--close,
+.menu-button__icon--open {
+  fill: currentColor;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button__icon--close:hover, .menu-button__icon--close:focus,
+.menu-button__icon--open:hover,
+.menu-button__icon--open:focus {
+  fill: #2196f3;
+}
+
 .menu-button__close {
   position: absolute;
   top: 10px;
