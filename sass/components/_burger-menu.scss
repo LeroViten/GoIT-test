@@ -6,19 +6,20 @@
   background-color: transparent;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.menu-button__icon--close,
-.menu-button__icon--open {
-  fill: currentColor;
-  transition: fill $transition-duration $transition-function;
+  transition: color $transition-duration $transition-function,
+    fill $transition-duration $transition-function;
 
   &:hover,
   &:focus {
-    fill: $accent-color;
+    color: $accent-color;
+    .menu-button__icon--close,
+    .menu-button__icon--open {
+      fill: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -37,6 +38,8 @@
   height: 100vh;
   padding: 48px 40px;
 
+  z-index: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,18 +57,20 @@
 }
 
 .burger-nav {
-  margin-bottom: 64px;
+  margin-bottom: 302px;
+  &__item {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
   &__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 .burger-nav__link {
-  font-family: $main-font;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
   color: $main-font-color;
 
   transition: color $transition-duration $transition-function;
@@ -75,14 +80,14 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: $accent-color;
   }
 }
 
 .burger-contact {
   margin-bottom: 64px;
-  padding-top: 200px;
 
   &__item:not(:last-child) {
     margin-bottom: 30px;
