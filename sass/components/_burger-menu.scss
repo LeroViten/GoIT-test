@@ -1,0 +1,141 @@
+.menu-button__open,
+.menu-button__close {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: color $transition-duration $transition-function,
+    fill $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    .menu-button__icon--close,
+    .menu-button__icon--open {
+      fill: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  max-width: 480px;
+  height: 100vh;
+  padding: 48px 40px;
+
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $white-color;
+  transform: translateY(-100%) translateX(100%);
+  transition: transform $transition-duration $transition-function;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.is-open {
+  transform: translateY(0) translateX(-50%);
+}
+
+.burger-nav {
+  margin-bottom: 302px;
+  &__item {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.burger-nav__link {
+  color: $main-font-color;
+
+  transition: color $transition-duration $transition-function;
+
+  &--active {
+    color: $accent-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+  }
+}
+
+.burger-contact {
+  margin-bottom: 64px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.burger-contact__phone {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
+.burger-contact__mail {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+}
+
+.burger-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+
+  &__item {
+    padding: 0 10px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+}

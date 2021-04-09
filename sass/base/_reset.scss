@@ -16,10 +16,16 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
   font-family: $main-font;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .link {

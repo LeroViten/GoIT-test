@@ -7,6 +7,15 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $transition-duration $transition-function;
+  overflow-y: scroll;
+
+  @media screen and (max-width: 767px) {
+    padding: 93px 15px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 207px 159px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -20,18 +29,32 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform $transition-duration $transition-function;
-  width: 528px;
-  height: 581px;
+  border-radius: 4px;
   background-color: $white-color;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+
+  transition: transform $transition-duration $transition-function;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    min-height: 609px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .modal__close-btn {
