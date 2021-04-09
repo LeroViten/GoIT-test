@@ -1256,38 +1256,38 @@ textarea {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
-  .page-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
+.page-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.page-footer .container {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .page-footer .container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .page-footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer .container {
-    text-align: left;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1295,10 +1295,15 @@ textarea {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .address {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .address {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1309,6 +1314,19 @@ textarea {
 @media screen and (min-width: 1200px) {
   .address__item:not(:last-child) {
     margin-bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .address-wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-wrapper {
+    margin-right: 165px;
+    margin-left: 61px;
   }
 }
 
@@ -1342,15 +1360,16 @@ textarea {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .subscription {
     margin-left: 70px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .subscription {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
 
@@ -1406,6 +1425,15 @@ textarea {
   color: #ffffff;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mail-subs {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mail-subs {
     margin-left: 93px;
@@ -1429,7 +1457,6 @@ textarea {
 }
 
 .email-form__input {
-  width: 358px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1443,6 +1470,30 @@ textarea {
 .email-form__input:focus {
   border-color: #2196f3;
   outline: none;
+}
+
+@media screen and (max-width: 479px) {
+  .email-form__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email-form__input {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .email-form__input {
+    display: block;
+  }
 }
 
 .email-form__btn {
@@ -1463,6 +1514,12 @@ textarea {
 @media screen and (max-width: 1199px) {
   .email-form__btn {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email-form__btn {
+    margin-left: 12px;
   }
 }
 /*# sourceMappingURL=main.css.map */
