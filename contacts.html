@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+        integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/contacts.min.css">
+    <title>Контакты</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container page-header__container">
+            <a class="logo logo__dark link animate__fadeInDown" lang="en" href="./index.html">
+                <span class="logo__accent">Web</span>Studio</a>
+            <button type="button" class="menu-button__open" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button>
+                <svg class="menu-button__icon" width="40" height="40" aria-label="Открытие мобильного меню">
+                    <use class="menu-button__icon--open" href="./img/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+                <button type="button" class="menu-button__close" data-menu-close>
+                    <svg class="menu-button__icon" width="40" height="40" aria-label="Закрытие мобильного меню">
+                        <use class="menu-button__icon--close" href="./img/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="burger-nav list">
+                    <li class="burger-nav__item">
+                        <a class="burger-nav__link link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="burger-nav__item">
+                        <a class="burger-nav__link link"
+                            href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="burger-nav__item">
+                        <a class="burger-nav__link burger-nav__link--active burger-nav__link--current link" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="burger-nav__wrapper">
+                    <ul class="burger-contact list">
+                        <li class="burger-contact__item">
+                            <a class="burger-contact__link link burger-contact__phone" href="tel:+380961111111">+38 096
+                                111 11 11</a>
+                        </li>
+                        <li class="burger-contact__item">
+                            <a class="burger-contact__link link burger-contact__mail" href="mailto:info@devstudio.com"
+                                lang="en">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="burger-social list">
+                        <li class="burger-social__item">
+                            <a class="burger-social__link link" href="#" target="_blank"
+                                rel="noopener noreferrer nofollow" lang="en">Instagram</a>
+                        </li>
+                        <li class="burger-social__item">
+                            <a class="burger-social__link link" href="#" target="_blank"
+                                rel="noopener noreferrer nofollow" lang="en">Twitter</a>
+                        </li>
+                        <li class="burger-social__item">
+                            <a class="burger-social__link link" href="#" target="_blank"
+                                rel="noopener noreferrer nofollow" lang="en">Facebook</a>
+                        </li>
+                        <li class="burger-social__item">
+                            <a class="burger-social__link link" href="#" target="_blank"
+                                rel="noopener noreferrer nofollow" lang="en">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list list">
+                    <li class="navigation__item">
+                        <a class="navigation__link link animate__fadeInDown" href="./index.html">Студия</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link  link animate__fadeInDown"
+                            href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--active navigation__link--current link animate__fadeInDown" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact list">
+                <li class="contact__item">
+                    <a class="contact__link link animate__fadeInDown" href="mailto:info@devstudio.com" lang="en">
+                        <svg class="contact__icon" width="16" height="12">
+                            <use href="./img/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link link animate__fadeInDown" href="tel:+380961111111">
+                        <svg class="contact__icon" width="10" height="16">
+                            <use href="./img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Main Section with Slider -->
+    <main>
+        <div class="container">
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="./img/slides/pexels-moose-photos-1.jpg" alt="Розовые наушники на розовом фоне">
+                </div>
+                <div class="slider__item">
+                    <img src="./img/slides/pexels-moose-photos-2.jpg" alt="Бирюзовая машинка на розово-бирюзовом фоне">
+                </div>
+                <div class="slider__item">
+                    <img src="./img/slides/pexels-moose-photos-3.jpg" alt="Раритетные часы-будильник на розово-бирюзовом фоне">
+                </div>
+                <div class="slider__item">
+                    <img src="./img/slides/pexels-moose-photos-4.jpg" alt="Биткойн на розово-бирюзовом фоне">
+                </div>
+                <div class="slider__item">
+                    <img src="./img/slides/pexels-moose-photos-5.jpg" alt="Бирюзовые наушники на розово-бирюзовом фоне">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="address-wrapper">
+                <a class="logo logo__light link" lang="en" href="./index.html">
+                    <span class="logo__accent">Web</span>Studio
+                </a>
+                <address class="address">
+                    <ul class="address__list list">
+                        <li class="address__item">
+                            <a class="address__link--mapped link" href="https://goo.gl/maps/86rL7UWtYpAY7sxWA"
+                                target="_blank" rel="noopener noreferrer nofollow">г. Киев, пр-т. Леси Украинки, 26</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link link" href="mailto:info@devstudio.com"
+                                lang="en">info@devstudio.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="subscription">
+                <p class="subscription__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+                <ul class="subscription__list list">
+                    <li class="subscription__item">
+                        <a class="subscription__link link" href="#">
+                            <svg class="subscription__icon" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="subscription__item">
+                        <a class="subscription__link link" href="#">
+                            <svg class="subscription__icon" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="subscription__item">
+                        <a class="subscription__link link" href="#">
+                            <svg class="subscription__icon" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="subscription__item">
+                        <a class="subscription__link link" href="#">
+                            <svg class="subscription__icon" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mail-subs">
+                <form class="email-form" autocomplete="off">
+                    <p class="email-form__label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                    <input type="text" class="email-form__input" name="mail" id="mail" placeholder="E-mail" />
+                    <button type="submit" class="email-form__btn">Подписаться
+                        <svg class="email-form__icon" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-subscribe"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- Connect Modal Window -->
+    <script src="./js/modal.js"></script>
+    <!-- Connect Mobile-menu -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- Install JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Connect Slick Slider -->
+    <script src="./js/slick.min.js"></script>
+    <!-- Connect Custom Slider Settings -->
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
