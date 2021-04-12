@@ -4,10 +4,11 @@ $(document).ready(function () {
         dots: true,
         adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         pauseOnFocus: true,
         pauseOnHover: true,
         pauseOnDotsHover: true,
+        slidesToShow:1
         // responsive: [
         //     {
         //         breakpoint: 768,
